@@ -12,7 +12,10 @@ class CashRegister
     @total += price
   end
   def apply_discount
+  if discount != 0
+    @discount = @discount.to_f
     @total *= (@discount/100)
     binding.pry
+    end
   end
 end

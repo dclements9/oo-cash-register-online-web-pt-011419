@@ -22,7 +22,7 @@ class CashRegister
   else
     "There is no discount to apply."
     end
-    @last_transaction = @total
+    @last_transaction = @total.to_i
   end
   def items
     @items

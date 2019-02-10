@@ -15,7 +15,7 @@ class CashRegister
   if discount != 0
     @discount = @discount.to_f
     @total -= (@total *= (@discount/100))
-    binding.pry
+    #binding.pry
     end
   end
 end
